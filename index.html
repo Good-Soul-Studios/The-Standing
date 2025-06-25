@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="LnSzzHM9BhcgDNzwEXs-6bMLMrzM-QHXluC9DhmeY5E" />
-  <link rel="icon" href="your-favicon-path.png">
-<meta property="og:title" content="The Standing">
-<meta property="og:description" content="A psychological horror survival game set in a ruined world overtaken by the unknowable.">
-<meta property="og:image" content="https://i.imgur.com/7UNbxNi.png">
-
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A psychological horror game set in a ruined, unrecognizable world.">
   <title>The Standing</title>
-  
-  <!-- Fonts -->
+  <link rel="icon" href="your-favicon-path.png">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
-
   <style>
     :root {
-      --bg-color: #1a1a1a;       /* Slightly lighter black */
-      --text-color: #f0e5b8;     /* Bone yellow */
-      --accent-color: #770000;   /* Deep blood red */
-      --hover-color: #cc0000;    /* Brightened red for hover */
+      --bg-color: #0d0d0d;
+      --text-color: #f0e5b8;
+      --accent-color: #770000;
+      --hover-color: #cc0000;
+    }
+
+    * {
+      box-sizing: border-box;
     }
 
     body {
@@ -27,25 +24,25 @@
       background-color: var(--bg-color);
       color: var(--text-color);
       font-family: 'Cormorant Garamond', serif;
-      line-height: 1.7;
-      overflow-x: hidden;
+      line-height: 1.6;
     }
 
     header {
       text-align: center;
-      padding: 60px 20px 40px;
+      padding: 60px 20px 30px;
+      background-color: #111;
     }
 
     header h1 {
-      font-size: 3em;
-      letter-spacing: 2px;
+      font-size: 3.5em;
+      letter-spacing: 3px;
       text-transform: uppercase;
       margin: 0;
     }
 
     header p {
       font-size: 1.2em;
-      max-width: 700px;
+      max-width: 800px;
       margin: 20px auto 0;
       color: var(--text-color);
     }
@@ -58,11 +55,11 @@
     }
 
     .cover img {
-      max-width: 90%;
+      max-width: 92%;
       height: auto;
-      box-shadow: 0 0 30px rgba(240, 229, 184, 0.3);
-      border: 2px solid var(--text-color);
-      border-radius: 6px;
+      box-shadow: 0 0 30px rgba(240, 229, 184, 0.1);
+      border: 1px solid var(--text-color);
+      border-radius: 4px;
     }
 
     section {
@@ -72,17 +69,23 @@
     }
 
     h2 {
-      font-size: 2em;
+      font-size: 2.2em;
       color: var(--text-color);
       text-transform: uppercase;
-      margin-bottom: 10px;
+      margin-bottom: 16px;
       border-bottom: 1px solid var(--accent-color);
-      padding-bottom: 5px;
+      padding-bottom: 8px;
     }
 
     p {
-      font-size: 1.1em;
+      font-size: 1.15em;
       color: var(--text-color);
+      margin-bottom: 20px;
+    }
+
+    em {
+      color: var(--accent-color);
+      font-style: italic;
     }
 
     .buttons {
@@ -91,31 +94,31 @@
     }
 
     .buttons a {
-      background-color: var(--bg-color);
+      background-color: transparent;
       color: var(--text-color);
       border: 1px solid var(--text-color);
-      padding: 14px 28px;
-      margin: 10px;
+      padding: 12px 26px;
       text-decoration: none;
       font-size: 1em;
       text-transform: uppercase;
-      transition: all 0.3s ease;
-      box-shadow: 0 0 10px var(--text-color);
+      transition: 0.3s ease;
+      box-shadow: 0 0 12px var(--accent-color);
       border-radius: 4px;
       letter-spacing: 1px;
     }
 
     .buttons a:hover {
-      background-color: var(--text-color);
+      background-color: var(--hover-color);
       color: var(--bg-color);
-      box-shadow: 0 0 20px var(--text-color);
+      box-shadow: 0 0 20px var(--hover-color);
     }
 
     footer {
       text-align: center;
       font-size: 0.9em;
       padding: 40px 20px;
-      color: #777;
+      color: #555;
+      background-color: #0c0c0c;
     }
   </style>
 </head>
@@ -123,57 +126,47 @@
 
   <header>
     <h1>The Standing</h1>
-    <p>A New Open-World Post Apacolyptic Horror Game</p>
+    <p>A ruined world. An unknowable presence. And the silence that followed.</p>
   </header>
 
   <div class="cover">
-    <!-- 🎮 Add your game cover image here -->
     <img src="https://i.imgur.com/7UNbxNi.png" alt="Game Cover">
   </div>
 
   <section>
-    <h2>The Story</h2>
-    <p>The world didn’t fall to war, plague, or famine. It fell to something no one understands.
-They were never seen clearly. Only felt — watching, waiting.
-No one remembers where They came from. Only that we should never stop hiding.</p>
-     <div style="margin-top: 40px;">
-       <P>You play as Cole, a man with no clear past. His memories are fragments, broken by the very presence that now stalks the world.
-Even the simplest shapes seem foreign to him — twisted by fear, blurred by exposure to Them.</P>
-    <div style="margin-top: 40px;">
-        <P> - "Down The Hill I see Them, They Aren't Moving...  Just... Just Standing There, Like They Know I've Been Here Watching, for 6 days"</P>
-    </div>
+    <h2>The Collapse</h2>
+    <p>It wasn’t war, plague, or famine. It was something else. Something no one understood. They didn’t arrive with fire or violence. They just... appeared. Still. Silent. Watching.</p>
+    <p>At first, people laughed. Called it mass hysteria. Y2K panic. But the sightings spread. Reports flooded in. Streets emptied. Cities fell quiet.</p>
+    <p>And then They started standing in groups. Not moving. Not speaking. Just waiting.</p>
   </section>
 
   <section>
-    <h2>What You’ll Experience</h2>
-    <p>An immersive world where unspeakable horrors stir just out of sight, lurking around every corner. They already know you’re here. They just don’t know where… yet.
-
-This is an all-new game in its very earliest stages — a descent into madness where weapons, enemy detection, and deep, sprawling lore will guide you. Stay sharp. Stay quiet. Stay alive… if you can.
-</p>
+    <h2>You Are Cole</h2>
+    <p>You don’t remember who you were. The world doesn’t care. Your memories are broken—shattered by exposure to Them. Even shapes feel wrong now. Places you knew don’t look the same.</p>
+    <p><em>“Down the hill I see Them. They haven’t moved. Six days now. Still. Watching.”</em></p>
   </section>
 
   <section>
-    <h2>The Watchers</h2>
-    <p>They stand in clustered silence, sometimes for days… sometimes for weeks. Hollow and unmoving. Not always truly there. Sometimes they leave their bodies behind like discarded shells,
-      drifting unseen through the air, always searching. Always hunting. Always seeking the warmth of a living heart. To them, you’re  not a person — only a prize. And when they find you, 
-      it doesn’t matter where you run. To them, it's not a matter of if, it's a matter of when…
-</p>
+    <h2>The Standing</h2>
+    <p>They cluster in abandoned fields. Frozen rooftops. Shattered cities. They don’t breathe. They don’t blink. They just exist.</p>
+    <p>Some say those forms are empty—shells left behind. That the real ones have moved on. Drifted. Spread. Watching from places we can’t see. Listening. Waiting for warmth.</p>
+    <p>You’re not a person to them. You’re a signal. A presence. A target.</p>
   </section>
 
   <section>
-  <h2>Whispers Left Behind</h2>
-  <p>
-    “Don’t look at Them too long.”  
-    “Don’t try to understand.”  
-    “If They stop watching… you’re already gone.”
-  </p>
-</section>
+    <h2>Whispers</h2>
+    <p>“Don’t look too long.”<br>
+       “Don’t try to name them.”<br>
+       “If They stop watching... you’re already gone
+    </p>
+  </section>
+
   <div class="buttons">
-    <a href="https://discord.gg/uFsrQFv2zM" target="_blank">Join the Discord</a>
+    <a href="https://discord.gg/uFsrQFv2zM" target="_blank">Enter the Silence</a>
   </div>
 
   <footer>
-    &copy; 2025 Your Game Studio Name. All rights reserved.
+    &copy; 2025 Good Soul Studios. All rights reserved.
   </footer>
 
 </body>
